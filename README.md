@@ -4,12 +4,12 @@
 
 打開您想要自動玩的踩地雷遊戲。
 使用螢幕截圖工具（例如 Windows 的剪取工具、macOS 的 Command+Shift+4）精確地截取以下每種方塊的單個圖像：
-unopened.png: 未打開的方塊。
-flagged.png: 已標記旗子的方塊。
-mine.png: 踩到地雷後顯示的地雷方塊。
-open_empty.png: 打開後是空白的方塊（周圍沒有地雷）。
-num_1.png 到 num_8.png: 打開後顯示數字 1 到 8 的方塊。
-將這些圖片保存為 .png 格式，並確保它們的名稱與程式碼中 TEMPLATES 字典裡定義的名稱完全一致。
+- unopened.png: 未打開的方塊。
+- flagged.png: 已標記旗子的方塊。
+- mine.png: 踩到地雷後顯示的地雷方塊。
+- open_empty.png: 打開後是空白的方塊（周圍沒有地雷）。
+- num_1.png 到 num_8.png: 打開後顯示數字 1 到 8 的方塊。
+## 將這些圖片保存為 .png 格式，並確保它們的名稱與程式碼中 TEMPLATES 字典裡定義的名稱完全一致。
 在您的 Python 腳本所在的目錄中，建立一個名為 templates 的子目錄，並將所有這些範本圖片放入其中。
 重要： 這些範本圖片應該是灰度圖，或者在載入時使用 cv2.IMREAD_GRAYSCALE 參數讀取為灰度圖。確保它們的尺寸與 CELL_SIZE 接近或相同。
 調整設定參數：
